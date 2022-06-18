@@ -19,4 +19,4 @@ class Solution:
                     left = middle + 1
                 else:
                     return middle
-            return left
+            return left         
