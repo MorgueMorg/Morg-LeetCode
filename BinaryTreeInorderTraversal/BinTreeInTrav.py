@@ -4,6 +4,8 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# ! Итеративный подход, без рекурсии
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         stack = [root]
