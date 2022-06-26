@@ -1,8 +1,9 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        if len(nums) == 1: return int(''.join(map(str, nums)))
+        # if len(nums) == 1: return int(''.join(map(str, nums))) -> Эта строка необязательна, она делает из списка число
         x = 0
         for i in nums:
+            # ^ -> Проводит побитовую операцию xor (исключающее или) на двух значениях. x = x ^ i
             x ^= i
         return x
 
