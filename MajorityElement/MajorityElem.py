@@ -20,3 +20,13 @@ class Solution:
                 inter = num
             count += (1 if num == inter else -1)
         return inter
+
+    
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        nums.sort()
+        l = len(nums)
+        if l % 2 == 0:
+            return nums[l//2]
+        else:
+            return nums[(l-1)//2]
