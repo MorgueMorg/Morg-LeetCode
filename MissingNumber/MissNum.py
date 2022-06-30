@@ -2,7 +2,7 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         nums.sort()
-        left = 0
+        left = 0    
         right = len(nums)
         while left < right:
             mid = (right + left) // 2
@@ -20,6 +20,7 @@ class Solution:
                 return i
 
 
+# Самый неплохой вариант
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         l = len(nums)
@@ -27,4 +28,10 @@ class Solution:
         new_sum = sum(nums)
         return prev_sum - new_sum
 
-    
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        x = len(nums)
+        for i in range(len(nums)):
+            x ^= i ^ nums[i] 
+        return x
