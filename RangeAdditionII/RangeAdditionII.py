@@ -8,4 +8,3 @@ class Solution:
             result[0] = min(result[0], ops[i][0])
             result[1] = min(result[1], ops[i][1])
         return result[0] * result[1]
-    
