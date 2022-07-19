@@ -1,3 +1,8 @@
+"""
+ORD() => Возвращает числовое представление для указанного символа.
+CHR() => возвращает символ, представляющий указанный юникод.
+"""
+
 class Solution:
     def convertToTitle(self, columnNumber: int) -> str:
         arr = []
