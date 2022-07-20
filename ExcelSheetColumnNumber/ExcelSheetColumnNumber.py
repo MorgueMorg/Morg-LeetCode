@@ -1,3 +1,7 @@
+"""
+ORD() => Возвращает числовое представление для указанного символа.
+"""
+
 class Solution:
     def titleToNumber(self, columnTitle: str) -> int:
         res = 0
