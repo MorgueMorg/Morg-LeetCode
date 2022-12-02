@@ -1,10 +1,24 @@
+#include<iostream>    
+#include<array> 
+#include <bits/stdc++.h>
+#include <stdlib.h>
+#include<stdarg.h>
+
+using namespace std;
 class Solution {
-  List<int> plusOne(List<int> digits) {
-    for (int i = digits.length - 1; i >= 0; i--){
-    if(++digits[i] > 9) digits[i] = 0;
-    else return digits;
-  }
-    digits.insert(0, 1);
-    return digits;
-  }
-}
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        int n = digits.size();
+        for (int i = n - 1; i >= 0; i--) {
+            if (digits[i] == 9) {
+                digits[i] = 0;
+            } else {
+                digits[i] += 1;
+                return digits; 
+            }
+        }
+        digits.push_back(0);
+        digits[0] = 1;
+        return digits;
+    }
+};
