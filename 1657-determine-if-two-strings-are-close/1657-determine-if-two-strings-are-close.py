@@ -4,7 +4,6 @@ class Solution:
         has2 = set(word2)       
         countOne = Counter(word1)
         countTwo = Counter(word2)     
-        for i in countOne:
-            if sorted(countOne.values()) == sorted(countTwo.values()) and has1 == has2:
+        if sorted(countOne.values()) == sorted(countTwo.values()) and has1 == has2:
                 return True
         return False
