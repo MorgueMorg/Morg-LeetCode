@@ -5,7 +5,7 @@ class Solution {
             if (num % 2 == 0) {
                 num /= 2;
                 counter++;
-            } else { num -= 1; counter++;}
+            } else { num --; counter++;}
         }
         return counter;
     }
